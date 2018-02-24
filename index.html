@@ -1,235 +1,83 @@
-<!DOCTYPE html>
-<!-- saved from url=(0063)https://www.andrew.cmu.edu/user/xiaoxiaw/templatemo_441_volton/ -->
-<html class="js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths gr__andrew_cmu_edu" style=""><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Volton - Responsive Mobile Template</title>
-        <meta name="description" content="">
-        <!-- 
-    	Volton Template
-    	http://www.templatemo.com/preview/templatemo_441_volton
-        -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        <link rel="stylesheet" href="./Volton - Responsive Mobile Template_files/normalize.css">
-        <link rel="stylesheet" href="./Volton - Responsive Mobile Template_files/font-awesome.css">
-        <link rel="stylesheet" href="./Volton - Responsive Mobile Template_files/bootstrap.min.css">
-        <link rel="stylesheet" href="./Volton - Responsive Mobile Template_files/templatemo-style.css">
-        <script src="./Volton - Responsive Mobile Template_files/modernizr-2.6.2.min.js"></script><style></style>
-    </head>
-    <body data-gr-c-s-loaded="true" style="">
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-    
-        <div class="responsive-header visible-xs visible-sm">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="top-section">
-                            <div class="profile-image">
-                                <img src="./Volton - Responsive Mobile Template_files/profile.jpg" alt="Volton">
-                            </div>
-                            <div class="profile-content">
-                                <h3 class="profile-title">Volton</h3>
-                                <p class="profile-description">Pro Photography</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <a href="https://www.andrew.cmu.edu/user/xiaoxiaw/templatemo_441_volton/#" class="toggle-menu"><i class="fa fa-bars"></i></a>
-                <div class="main-navigation responsive-menu">
-                    <ul class="navigation">
-                        <li><a href="https://www.andrew.cmu.edu/user/xiaoxiaw/templatemo_441_volton/#top" class="active"><i class="fa fa-home"></i>Home</a></li>
-                        <li><a href="https://www.andrew.cmu.edu/user/xiaoxiaw/templatemo_441_volton/#about" class=""><i class="fa fa-user"></i>About Me</a></li>
-                        <li><a href="https://www.andrew.cmu.edu/user/xiaoxiaw/templatemo_441_volton/#projects" class=""><i class="fa fa-newspaper-o"></i>My Gallery</a></li>
-                        <li><a href="https://www.andrew.cmu.edu/user/xiaoxiaw/templatemo_441_volton/#contact"><i class="fa fa-envelope"></i>Contact Me</a></li>
-                    </ul>
-                </div>
-            </div>
+---
+layout: home
+---
+
+<main class="bd-masthead" id="content" role="main">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-6 mx-auto col-md-6 order-md-2">
+        <img class="img-fluid mb-3 mb-md-0" src="{{ site.baseurl }}/assets/img/bootstrap-stack.png" alt="" width="1024" height="860">
+      </div>
+      <div class="col-md-6 order-md-1 text-center text-md-left pr-md-5">
+        <h1 class="mb-3 bd-text-purple-bright">Bootstrap</h1>
+        <p class="lead">
+          Build responsive, mobile-first projects on the web with the world's most popular front-end component library.
+        </p>
+        <p class="lead mb-4">
+          Bootstrap is an open source toolkit for developing with HTML, CSS, and JS. Quickly prototype your ideas or build your entire app with our Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful plugins built on jQuery.
+        </p>
+        <div class="d-flex flex-column flex-md-row lead mb-3">
+          <a href="{{ site.baseurl }}/docs/{{ site.docs_version }}/getting-started/introduction/" class="btn btn-lg btn-bd-primary mb-3 mb-md-0 mr-md-3" onclick="ga('send', 'event', 'Jumbotron actions', 'Get started', 'Get started');">Get started</a>
+          <a href="{{ site.baseurl }}/docs/{{ site.docs_version }}/getting-started/download/" class="btn btn-lg btn-outline-secondary" onclick="ga('send', 'event', 'Jumbotron actions', 'Download', 'Download {{ site.current_version }}');">Download</a>
         </div>
+        <p class="text-muted mb-0">
+          Currently v{{ site.current_version }}
+        </p>
+      </div>
+    </div>
+    {% include ads.html %}
+  </div>
+</main>
 
-        <!-- SIDEBAR -->
-        <div class="sidebar-menu hidden-xs hidden-sm">
-            <div class="top-section">
-                <div class="profile-image">
-                    <img src="./Volton - Responsive Mobile Template_files/profile.jpg" alt="Volton">
-                </div>
-                <h3 class="profile-title">Volton</h3>
-                <p class="profile-description">Pro Photography</p>
-            </div> <!-- top-section -->
-            <div class="main-navigation">
-                <ul class="navigation">
-                    <li><a href="https://www.andrew.cmu.edu/user/xiaoxiaw/templatemo_441_volton/#top" class="active"><i class="fa fa-globe"></i>Welcome</a></li>
-                    <li><a href="https://www.andrew.cmu.edu/user/xiaoxiaw/templatemo_441_volton/#about" class=""><i class="fa fa-pencil"></i>About Me</a></li>
-                    <li><a href="https://www.andrew.cmu.edu/user/xiaoxiaw/templatemo_441_volton/#projects" class=""><i class="fa fa-paperclip"></i>My Gallery</a></li>
-                    <li><a href="https://www.andrew.cmu.edu/user/xiaoxiaw/templatemo_441_volton/#contact" class=""><i class="fa fa-link"></i>Contact Me</a></li>
-                </ul>
-            </div> <!-- .main-navigation -->
-            <div class="social-icons">
-                <ul>
-                    <li><a href="https://www.andrew.cmu.edu/user/xiaoxiaw/templatemo_441_volton/#"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="https://www.andrew.cmu.edu/user/xiaoxiaw/templatemo_441_volton/#"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="https://www.andrew.cmu.edu/user/xiaoxiaw/templatemo_441_volton/#"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a href="https://www.andrew.cmu.edu/user/xiaoxiaw/templatemo_441_volton/#"><i class="fa fa-google-plus"></i></a></li>
-                    <li><a href="https://www.andrew.cmu.edu/user/xiaoxiaw/templatemo_441_volton/#"><i class="fa fa-youtube"></i></a></li>
-                    <li><a href="https://www.andrew.cmu.edu/user/xiaoxiaw/templatemo_441_volton/#"><i class="fa fa-rss"></i></a></li>
-                </ul>
-            </div> <!-- .social-icons -->
-        </div> <!-- .sidebar-menu -->
-        
+<div class="masthead-followup row m-0 border border-white">
+  <div class="col-12 col-md-4 p-3 p-md-5 bg-light border border-white">
+    <!-- Icon by Bytesize https://github.com/danklammer/bytesize-icons -->
+    {% include icons/import.svg width="32" height="32" class="text-primary mb-2" %}
+    <h3>Installation</h3>
+    <p>Include Bootstrap's source Sass and JavaScript files via npm, Composer or Meteor. Package managed installs don't include documentation, but do include our build system and readme.</p>
 
-        <div class="banner-bg" id="top">
-            <div class="banner-overlay"></div>
-            <div class="welcome-text">
-                <h2>Simple Design | Personal Portfolio</h2>
-                <h5>This is a mobile friendly layout with Bootstrap v3.3.1 framework. Maecenas eu ante at nunc posuere fringilla sit amet non dolor. Proin condimentum fermentum nunc.</h5>
-            </div>
-        </div>
+{% highlight sh %}
+npm install bootstrap
+{% endhighlight %}
 
-        <!-- MAIN CONTENT -->
-        <div class="main-content">
-            <div class="fluid-container">
+{% highlight sh %}
+gem install bootstrap -v {{ site.current_ruby_version }}
+{% endhighlight %}
 
-                <div class="content-wrapper">
-                
-                    <!-- ABOUT -->
-                    <div class="page-section" id="about">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h4 class="widget-title">Learn About Me</h4>
-                            <div class="about-image">
-                                <img src="./Volton - Responsive Mobile Template_files/8.jpg" alt="about me">
-                            </div>
-                            <p>Volton is free <a rel="nofollow" href="http://www.templatemo.com/page/1">responsive mobile template</a> from <span class="blue">template</span><span class="green">mo</span> website. You can use this template for any purpose. Please tell your friends about it. Thank you. Credit goes to <a rel="nofollow" href="http://unsplash.com/">Unsplash</a> for images used in this design. You can <strong>change menu icons</strong> by checking <a rel="nofollow" href="http://fontawesome.info/font-awesome-icon-world-map/">Font Awesome</a> (version 4). Example: <strong>&lt;i class="fa fa-camera"&gt;&lt;/i&gt;</strong></p>
-                            <hr>
-                        </div>
-                    </div> <!-- #about -->
-                    </div>
-                    
-                    <!-- PROJECTS -->
-                    <div class="page-section" id="projects">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h4 class="widget-title">PHOTOS OF WHAT I DO</h4>
-                            <p>Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Maecenas et lorem molestie, maximus justo dignissim, cursus nisl. Nullam at ante quis ex pharetra pulvinar quis id dolor. Integer lorem odio, euismod ut sem sit amet, imperdiet condimentum diam.</p>
-                        </div>
-                    </div>
-                    <div class="row projects-holder">
-                        <div class="col-md-4 col-sm-6">
-                            <div class="project-item">
-                                <img src="./Volton - Responsive Mobile Template_files/1.jpg" alt="">
-                                <div class="project-hover">
-                                    <div class="inside">
-                                        <h5><a href="https://www.andrew.cmu.edu/user/xiaoxiaw/templatemo_441_volton/#">Pellentesque porta ligula</a></h5>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam cursus</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="project-item">
-                                <img src="./Volton - Responsive Mobile Template_files/2.jpg" alt="">
-                                <div class="project-hover">
-                                    <div class="inside">
-                                        <h5><a href="https://www.andrew.cmu.edu/user/xiaoxiaw/templatemo_441_volton/#">Pellentesque porta ligula</a></h5>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam cursus</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="project-item">
-                                <img src="./Volton - Responsive Mobile Template_files/3.jpg" alt="">
-                                <div class="project-hover">
-                                    <div class="inside">
-                                        <h5><a href="https://www.andrew.cmu.edu/user/xiaoxiaw/templatemo_441_volton/#">Pellentesque porta ligula</a></h5>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam cursus.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="project-item">
-                                <img src="./Volton - Responsive Mobile Template_files/4.jpg" alt="">
-                                <div class="project-hover">
-                                    <div class="inside">
-                                        <h5><a href="https://www.andrew.cmu.edu/user/xiaoxiaw/templatemo_441_volton/#">Pellentesque porta ligula</a></h5>
-                                        <p>Quisque mattis sit amet dolor eu scelerisque. Vivamus bibendum massa et nisl tempus commodo.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="project-item">
-                                <img src="./Volton - Responsive Mobile Template_files/5.jpg" alt="">
-                                <div class="project-hover">
-                                    <div class="inside">
-                                        <h5><a href="https://www.andrew.cmu.edu/user/xiaoxiaw/templatemo_441_volton/#">Pellentesque porta ligula</a></h5>
-                                        <p>Quisque mattis sit amet dolor eu scelerisque. Vivamus bibendum massa et nisl tempus commodo.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="project-item">
-                                <img src="./Volton - Responsive Mobile Template_files/6.jpg" alt="">
-                                <div class="project-hover">
-                                    <div class="inside">
-                                        <h5><a href="https://www.andrew.cmu.edu/user/xiaoxiaw/templatemo_441_volton/#">Pellentesque porta ligula</a></h5>
-                                        <p>Quisque mattis sit amet dolor eu scelerisque. Vivamus bibendum massa et nisl tempus commodo.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> <!-- .projects-holder -->
-                    </div>
-                    <hr>
+    <hr class="half-rule">
+    <a class="btn btn-outline-primary" href="{{ site.baseurl }}/docs/{{ site.docs_version }}/getting-started/download">Read installation docs</a>
+  </div>
 
-                    <!-- CONTACT -->
-                    <div class="page-section" id="contact">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h4 class="widget-title">PLACE TO TALK WITH ME</h4>
-                            <p>Vestibulum ac iaculis erat, in semper dolor. Maecenas et lorem molestie, maximus justo dignissim, cursus nisl. Nullam at ante quis ex pharetra pulvinar quis id dolor. Integer lorem odio, euismod ut sem sit amet, imperdiet condimentum diam.</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <form action="https://www.andrew.cmu.edu/user/xiaoxiaw/templatemo_441_volton/#" method="post" class="contact-form">
-                            <fieldset class="col-md-4 col-sm-6">
-                                <input type="text" id="your-name" placeholder="Your Name...">
-                            </fieldset>
-                            <fieldset class="col-md-4 col-sm-6">
-                                <input type="email" id="email" placeholder="Your Email...">
-                            </fieldset>
-                            <fieldset class="col-md-4 col-sm-12">
-                                <input type="text" id="your-subject" placeholder="Subject...">
-                            </fieldset>
-                            <fieldset class="col-md-12 col-sm-12">
-                                <textarea name="message" id="message" cols="30" rows="6" placeholder="Leave your message..."></textarea>
-                            </fieldset>
-                            <fieldset class="col-md-12 col-sm-12">
-                                <input type="submit" class="button big default" value="Send Message">
-                            </fieldset>
-                        </form>
-                    </div> <!-- .contact-form -->
-                    </div>
-                    <hr>
+  <div class="col-12 col-md-4 p-3 p-md-5 bg-light border border-white">
+    <!-- Icon by Bytesize https://github.com/danklammer/bytesize-icons -->
+    {% include icons/download.svg width="32" height="32" class="text-primary mb-2" %}
+    <h3>BootstrapCDN</h3>
+    <p>When you only need to include Bootstrap's compiled CSS or JS, you can use <a href="https://www.bootstrapcdn.com/">BootstrapCDN</a>.</p>
 
-                    <div class="row" id="footer">
-                        <div class="col-md-12 text-center">
-                            <p class="copyright-text">Copyright © 2084 Company Name</p>
-                        </div>
-                    </div>
+<h5>CSS only</h5>
+{% highlight html %}
+<link rel="stylesheet" href="{{ site.cdn.css }}" integrity="{{ site.cdn.css_hash }}" crossorigin="anonymous">
+{% endhighlight %}
 
-                </div>
+<h5>JS, Popper.js, and jQuery</h5>
+{% highlight html %}
+<script src="{{ site.cdn.jquery }}" integrity="{{ site.cdn.jquery_hash }}" crossorigin="anonymous"></script>
+<script src="{{ site.cdn.popper }}" integrity="{{ site.cdn.popper_hash }}" crossorigin="anonymous"></script>
+<script src="{{ site.cdn.js }}" integrity="{{ site.cdn.js_hash }}" crossorigin="anonymous"></script>
+{% endhighlight %}
+    <hr class="half-rule">
+    <a class="btn btn-outline-primary" href="{{ site.baseurl }}/docs/{{ site.docs_version }}/layout/overview/">Explore the docs</a>
+  </div>
 
-            </div>
-        </div>
-
-        <script src="./Volton - Responsive Mobile Template_files/jquery-1.10.2.min.js"></script>
-        <script src="./Volton - Responsive Mobile Template_files/plugins.min.js"></script>
-        <script src="./Volton - Responsive Mobile Template_files/main.min.js"></script>
-
-    
-<div id="mouseposition-extension-element-full-container" style="position: fixed; top: 0px; left: 0px; right: 0px; bottom: 0px; pointer-events: none; z-index: 2147483647; font-weight: 400;"><div id="mouseposition-extension-element-rect-display" style="display: none; position: absolute; background: rgba(255, 255, 255, 0.7); outline: black solid 1px; font-size: 12px; z-index: 2147483647; justify-content: center; align-items: center; user-select: none; cursor: default; color: rgb(0, 0, 0); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; width: 0px; height: 0px;"><pre style="flex: 1 1 0%; text-align: center; background-color: rgba(255, 255, 255, 0.7); color: rgb(0, 0, 0); min-width: 42px; min-height: 12px; transition: all 1s;"></pre></div><pre id="mouseposition-extension-element-coordinate-display" style="position: absolute; display: none; background: rgb(255, 255, 255); font-size: 12px; line-height: 14px; border-radius: 3px; border-width: 1px; border-color: rgb(34, 34, 34) black rgb(51, 51, 51); border-style: solid; padding: 3px; z-index: 2147483647; color: rgb(34, 34, 34); user-select: none; cursor: default; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;"></pre></div></body></html>
+  <div class="col-12 col-md-4 p-3 p-md-5 bg-light border border-white">
+    <!-- Icon by Bytesize https://github.com/danklammer/bytesize-icons -->
+    {% include icons/lightning.svg width="32" height="32" class="text-primary mb-2" %}
+    <h3>Official Themes</h3>
+    <p>
+      Take Bootstrap 4 to the next level with official premium themes—toolkits built on Bootstrap with new components and plugins, docs, and build tools.
+    </p>
+    <img class="img-fluid mt-3 mx-auto" src="{{ site.baseurl }}/assets/img/bootstrap-themes.png" alt="Bootstrap Themes" width="1024" height="388">
+    <hr class="half-rule">
+    <a href="{{ site.themes }}" class="btn btn-outline-primary">Browse themes</a>
+  </div>
+</div>
