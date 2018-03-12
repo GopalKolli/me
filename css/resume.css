@@ -83,7 +83,7 @@ h2 {
   #sideNav .navbar-brand .img-profile {
     max-width: 16rem;
     max-height: 16rem;
-    border: 0.2rem solid rgba(255, 255, 255, 0.2);
+    border: 0.05rem solid rgba(255, 203, 154, 0.8);
   }
   #sideNav .navbar-collapse {
     display: flex;
@@ -145,3 +145,9 @@ a {
 a:hover, a:focus, a:active {
   color: #824027;
 }
+
+@media (min-width: 992px)
+#sideNav .navbar-collapse {
+    
+    padding-bottom: 0rem !important;
+  }
