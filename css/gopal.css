@@ -22,7 +22,7 @@ ul.tabs li
 ul.tabs li.active
 {
   border-bottom:solid 1px #fff;
-  background:#1E4258
+  background:#1E4256
 }
 
 .tabs a:hover{
@@ -114,7 +114,7 @@ h1{
 }
 
 .tabs .active a{
-  color: #f1ffcc;
+  color: #f1ffcd;
 }
 
 @media only screen and (max-width : 860px){
