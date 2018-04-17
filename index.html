@@ -50,10 +50,10 @@
 		      <a class="nav-link js-scroll-trigger" href="#about">Me</a>
 		    </li>
 		    <li class="nav-item">
-		      <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+		      <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
 		      </li>
 		    <li class="nav-item">
-		      <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+		      <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
 		      </li>
 		    <li class="nav-item">
 		      <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
@@ -135,9 +135,89 @@
           <br>
           
           
-          
         </div>
       </section>
+
+      
+
+      <section style="background-color: #d1e8e2" class="resume-section p-3 p-lg-5 d-flex flex-column" id="projects">
+        <div style="margin-top: 2rem">
+
+		  <div>
+              <a style="color:#d1e8e2; font-weight: 600; float: right; display: block;border-radius: 0.4rem; background-color: #265077; padding: 0.5rem 1rem 0.5rem 1rem" class="resume-date text-md-right" href="https://www.linkedin.com/in/gopalkolli/" target="_blank">LinkedIn</a>
+          </div>
+
+          <h2 style="color: #1E4258;" class="mb-5">Projects</h2>
+
+
+
+          <ul class="tabs">
+			  <li class="active projet-container"><a style="font-weight: 600" href="#">Machine Learning</a></li>
+			  <li class="projet-container"><a style="font-weight: 600" href="#">Deep Learning on Computer Vision</a></li>
+			  <li class="projet-container"><a style="font-weight: 600" href="#">Deep Learning on NLP</a></li>
+			  <li class="projet-container"><a style="font-weight: 600" href="#">Deep Reinforcement Learning</a></li>
+			  <li class="projet-container"><a style="font-weight: 600" href="#">AI Planning</a></li>
+			  <!-- add as many as you want -->
+		  </ul>
+		  <div style="color: #1E4258; background-color: #b7d5e1" id="container" class="projet-container">
+			  <section>
+			  	<p style="font-size: 1.6rem; color: #1E4258">Predicting Airbnb customers’ first booking based on their online activity </p>
+			    <p>Implemented blended ensemble of classifiers technique to predict new customers’ first booking. Blended the Logistic Regression, SVM, KNN and XG Boosting models into the ensemble. Increased accuracy by 6%</p>
+			    <hr>
+			    <p style="font-size: 1.6rem; color: #1E4258">Predict Testing Time of Car </p>
+			    <p>Developed a Two-Level Machine Learning model to predict testing time of a car based on 370 features. Reduced the dimensionality to 125 features and trained the model which predicts with maximum error of 6 secs</p>
+			    <hr>
+			    <p style="font-size: 1.6rem; color: #1E4258">Face Recognition using D-KSVD</p>
+			    <p>Trained a Discriminative K-SVD model, which is a dictionary-based learning model to perform face recognition. Gained a recognition accuracy of 95%</p>
+			    <hr>
+			    <p style="font-size: 1.6rem; color: #1E4258">Spam Detection Using Machine Learning</p>
+			    <p>Detecting spam e-mails. Preprocessed and vectorized an email body content using 'bag-of-words' and 'concentration based feature extraction' technique, and trained a Neural Network to classify spam mails from legitimate ones. Gained classification accuracu of around 87%</p>
+			  </section>
+
+			  <section>
+			    <p style="font-size: 1.6rem; color: #1E4258">Predicting Lung Cancer</p>
+			    <p>Developed a Deep Learning model using 3D VGGNet Convolutional Neural Network to predict a potential Lung Cancer case in future based on the current Lung CT scans. Gained accuracy of 71%</p>
+			    <hr>
+			    <p style="font-size: 1.6rem; color: #1E4258">Object Detection and Localization </p>
+			    <p>Trained a Convolutional Neural Network with YOLO algorithm to detect objects in an image and Localized them</p>
+			    <hr>
+			    <p style="font-size: 1.6rem; color: #1E4258">Nuclei instance segementation </p>
+			    <p>Using Mask-RCNN technique to identify the region of nuclei presence in an image</p>
+			  </section>
+
+			  <section>
+			    <p style="font-size: 1.6rem; color: #1E4258">Sentiment Analysis on IMDB Movie Reviews</p>
+			    <p>Trained a Recurrent Neural Network to detect sentiment of an IMDB Movie Review</p>
+			    <hr>
+			    <p style="font-size: 1.6rem; color: #1E4258">Conversational AI Design</p>
+			    <p>Designed a comprehensive Conversational AI system which is a combination of Machine Learning, Sentiment Analysis, Context Analysis and Reinforcement Learning</p>
+			  </section>
+
+			  <section>
+			    <p style="font-size: 1.6rem; color: #1E4258">Navigation by avoiding obstacles using Deep RL</p>
+			    <p>Training a DQN to guide the agent to move around by avoiding obstacles in the path</p>
+			  </section>
+
+			  <section>
+			    <p style="font-size: 1.6rem; color: #1E4258">Optimal Drone Swarm Navigation for Search and Rescue</p>
+			    <p>Developed a planning algorithm for optimal navigation of a swarm of drones to effectively complete search operations in minimal time, identifying risk zones on the fly</p>
+			    <iframe width="560" height="315" src="https://www.youtube.com/embed/ZJ__AjmJrc0?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			    <p>Above is the behavior of swarm of drones' navigation across a 64x64 grid area. A Heatmap is randomly generated and is displayed on the right.</p>
+				<p>At each timestep, drones take an action based on a heuristic function results. Each drone considers the heatmap at that timestep and fellow drone locations as heuristics.</p>
+				<p>There is balance between exploiting the high risk zones(red zones) and also exploring the unexplored areas for evidences (Humans).</p>
+				<p>As drones rely on heat map, drones adapt their course in accordance to the dynamic updates in the heat-map.</p>
+			    <p>The blue dots are the places where humans are present but the swarm or base station doesnt know their presence initially. The heatmap is updated once any drone explores and finds a human to make that region more important (red zone).</p>
+			    <p>there is an attraction factor between drones. They tend to get closer when available to keep mesh network intact.</p>
+
+			  </section>
+		  	<!-- add as many as you want -->
+		  </div>
+
+          
+        </div>
+
+      </section>
+
 
       <section style="background-color: #b1e1d5" class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
         <div style="margin-top: 2rem">
@@ -205,80 +285,6 @@
 
       </section>
 
-      <section style="background-color: #d1e8e2" class="resume-section p-3 p-lg-5 d-flex flex-column" id="projects">
-        <div style="margin-top: 2rem">
-
-		  <div>
-              <a style="color:#d1e8e2; font-weight: 600; float: right; display: block;border-radius: 0.4rem; background-color: #265077; padding: 0.5rem 1rem 0.5rem 1rem" class="resume-date text-md-right" href="https://www.linkedin.com/in/gopalkolli/" target="_blank">LinkedIn</a>
-          </div>
-
-          <h2 style="color: #1E4258;" class="mb-5">Projects</h2>
-
-
-
-          <ul class="tabs">
-			  <li class="active projet-container"><a style="font-weight: 600" href="#">Machine Learning</a></li>
-			  <li class="projet-container"><a style="font-weight: 600" href="#">Deep Learning on Computer Vision</a></li>
-			  <li class="projet-container"><a style="font-weight: 600" href="#">Deep Learning on NLP</a></li>
-			  <li class="projet-container"><a style="font-weight: 600" href="#">Deep Reinforcement Learning</a></li>
-			  <li class="projet-container"><a style="font-weight: 600" href="#">AI Planning</a></li>
-			  <!-- add as many as you want -->
-		  </ul>
-		  <div style="color: #1E4258; background-color: #b7d5e1" id="container" class="projet-container">
-			  <section>
-			  	<p style="font-size: 1.6rem; color: #1E4258">Predicting Airbnb customers’ first booking based on their online activity </p>
-			    <p>Implemented blended ensemble of classifiers technique to predict new customers’ first booking. Blended the Logistic Regression, SVM, KNN and XG Boosting models into the ensemble. Increased accuracy by 6%</p>
-			    <hr>
-			    <p style="font-size: 1.6rem; color: #1E4258">Predict Testing Time of Car </p>
-			    <p>Developed a Two-Level Machine Learning model to predict testing time of a car based on 370 features. Reduced the dimensionality to 125 features and trained the model which predicts with maximum error of 6 secs</p>
-			    <hr>
-			    <p style="font-size: 1.6rem; color: #1E4258">Face Recognition using D-KSVD</p>
-			    <p>Trained a Discriminative K-SVD model, which is a dictionary-based learning model to perform face recognition. Gained a recognition accuracy of 95%</p>
-			  </section>
-
-			  <section>
-			    <p style="font-size: 1.6rem; color: #1E4258">Predicting Lung Cancer</p>
-			    <p>Developed a Deep Learning model using 3D VGGNet Convolutional Neural Network to predict a potential Lung Cancer case in future based on the current Lung CT scans. Gained accuracy of 71%</p>
-			    <hr>
-			    <p style="font-size: 1.6rem; color: #1E4258">Object Detection and Localization </p>
-			    <p>Trained a Convolutional Neural Network with YOLO algorithm to detect objects in an image and Localized them</p>
-			    <hr>
-			    <p style="font-size: 1.6rem; color: #1E4258">Nuclei instance segementation </p>
-			    <p>Using Mask-RCNN technique to identify the region of nuclei presence in an image</p>
-			  </section>
-
-			  <section>
-			    <p style="font-size: 1.6rem; color: #1E4258">Sentiment Analysis on IMDB Movie Reviews</p>
-			    <p>Trained a Recurrent Neural Network to detect sentiment of an IMDB Movie Review</p>
-			    <hr>
-			    <p style="font-size: 1.6rem; color: #1E4258">Conversational AI Design</p>
-			    <p>Designed a comprehensive Conversational AI system which is a combination of Machine Learning, Sentiment Analysis, Context Analysis and Reinforcement Learning</p>
-			  </section>
-
-			  <section>
-			    <p style="font-size: 1.6rem; color: #1E4258">Navigation by avoiding obstacles using Deep RL</p>
-			    <p>Training a DQN to guide the agent to move around by avoiding obstacles in the path</p>
-			  </section>
-
-			  <section>
-			    <p style="font-size: 1.6rem; color: #1E4258">Optimal Drone Swarm Navigation for Search and Rescue</p>
-			    <p>Developed a planning algorithm for optimal navigation of a swarm of drones to effectively complete search operations in minimal time, identifying risk zones on the fly</p>
-			    <iframe width="560" height="315" src="https://www.youtube.com/embed/ZJ__AjmJrc0?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-			    <p>Above is the behavior of swarm of drones' navigation across a 64x64 grid area. A Heatmap is randomly generated and is displayed on the right.</p>
-				<p>At each timestep, drones take an action based on a heuristic function results. Each drone considers the heatmap at that timestep and fellow drone locations as heuristics.</p>
-				<p>There is balance between exploiting the high risk zones(red zones) and also exploring the unexplored areas for evidences (Humans).</p>
-				<p>As drones rely on heat map, drones adapt their course in accordance to the dynamic updates in the heat-map.</p>
-			    <p>The blue dots are the places where humans are present but the swarm or base station doesnt know their presence initially. The heatmap is updated once any drone explores and finds a human to make that region more important (red zone).</p>
-			    <p>there is an attraction factor between drones. They tend to get closer when available to keep mesh network intact.</p>
-
-			  </section>
-		  	<!-- add as many as you want -->
-		  </div>
-
-          
-        </div>
-
-      </section>
 
       <section style="background-color: #b1e1d5" class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
         <div style="margin-top: 2rem">
